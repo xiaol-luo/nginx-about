@@ -1,3 +1,6 @@
 #!/bin/bash
 
-./configure --with-debug --add-module=/mnt/hgfs/windir/nginx_dir/nginx-1.9.15/src/other_module/mytest
+#cur_dir=`pwd`
+mytest_dir=`pwd`/src/other_module/mytest
+echo "./configure --with-debug --add-module=$mytest_dir"
+#./configure --with-debug --add-module=$mytest_dir
